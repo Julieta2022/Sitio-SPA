@@ -80,8 +80,9 @@ nav a:hover{
 
 .bienvenidos{
     position: relative;
-    top: -500px;
+    top: -450px;
 }
+
 
 .caja1 img{
     opacity: 0.5;
@@ -95,7 +96,7 @@ nav a:hover{
 
 .profesionales{
     position: relative;
-    top: -500px;
+    top: -450px;
 }
 
 .caja2 img{
@@ -111,7 +112,7 @@ p{
 }
 
 h2{
-    margin: 90px auto 10px;
+    margin: 75px auto 10px;
     font-family: 'Montserrat', sans-serif;
     font-size: 45px;
     color: rgb(142, 30, 84);
@@ -171,19 +172,49 @@ div .col-2{
     grid-column: 2;
     grid-row:1 / span 2;
     max-height: 500px;
+    overflow: hidden;/*para que el zoom aplicado a la imagen no salga del contenedor*/
 }
 
 div .col-3imagen1{
     grid-column: 3;
     grid-row:1;
     max-height: 250px;
-   
+    overflow: hidden;
 }
 div .col-3imagen2{
     grid-column: 3;
     grid-row:2;
     max-height: 250px;
+    overflow: hidden;
 }
+
+.col-2 img{
+    transition: all 0.5s ease;
+    transform: scale(1);
+} 
+
+.col-2:hover img{
+    transform: scale(1.05);
+}
+
+.col-3imagen1 img{
+    transition: all 0.5s ease;
+    transform: scale(1);
+} 
+
+.col-3imagen1:hover img{
+    transform: scale(1.05);
+}
+
+.col-3imagen2 img{
+    transition: all 0.5s ease;
+    transform: scale(1);
+} 
+
+.col-3imagen2:hover img{
+    transform: scale(1.05);
+}
+
 
 .grid-contenedor1{
     margin-top: 35px;
@@ -195,21 +226,25 @@ div .col-3imagen2{
 div .contenido1{
     grid-column: 1;
     grid-row: 1;
+    overflow: hidden;
 }
 
 div .contenido2{
     grid-column: 1;
     grid-row: 2;
+    overflow: hidden;
 }
 
 div .contenido3{
     grid-column: 2;
     grid-row: 1;
+    overflow: hidden;
 }
 
 div .contenido4{
     grid-column: 2;
     grid-row: 2;
+    overflow: hidden;
 }
 
 div .contenido5{
@@ -222,6 +257,42 @@ div .contenido5{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.contenido1 img{
+    transition: all 0.5s ease;
+    transform: scale(1);
+}
+
+.contenido1:hover img{
+    transform: scale(1.05);
+}
+
+.contenido2 img{
+    transition: all 0.5s ease;
+    transform: scale(1);
+}
+
+.contenido2:hover img{
+    transform: scale(1.05);
+}
+
+.contenido3 img{
+    transition: all 0.5s ease;
+    transform: scale(1);
+}
+
+.contenido3:hover img{
+    transform: scale(1.05);
+}
+
+.contenido4 img{
+    transition: all 0.5s ease;
+    transform: scale(1);
+}
+
+.contenido4:hover img{
+    transform: scale(1.05);
 }
 
 .contenido5 h4{
@@ -284,21 +355,61 @@ div .contenido6{
 div .contenido7{
     grid-column: 2;
     grid-row: 1;
+    overflow: hidden;
 }
 
 div .contenido8{
     grid-column: 2;
     grid-row: 2 ;
+    overflow: hidden;
 }
 
 div .contenido9{
     grid-column: 3;
     grid-row: 1 ;
+    overflow: hidden;
 }
 
 div .contenido10{
     grid-column: 3;
     grid-row: 2 ;
+    overflow: hidden;
+}
+
+.contenido7 img{
+    transition: all 0.5s ease;
+    transform: scale(1);
+}
+
+.contenido7:hover img{
+    transform: scale(1.05);
+}
+
+.contenido8 img{
+    transition: all 0.5s ease;
+    transform: scale(1);
+}
+
+.contenido8:hover img{
+    transform: scale(1.05);
+}
+
+.contenido9 img{
+    transition: all 0.5s ease;
+    transform: scale(1);
+}
+
+.contenido9:hover img{
+    transform: scale(1.05);
+}
+
+.contenido10 img{
+    transition: all 0.5s ease;
+    transform: scale(1);
+}
+
+.contenido10:hover img{
+    transform: scale(1.05);
 }
 
 
@@ -318,13 +429,29 @@ div .contenido11 {
     align-items: center;
 }    
  
+div .contenido11{
+    overflow: hidden;
+}
+
+.contenido11 img{
+    transition: all 0.5s ease;
+    transform: scale(1);
+}
+
+.contenido11:hover img{
+    transform: scale(1.05);
+}
+
+
 .contenido11 p{
     font-family: 'Montserrat', sans-serif;
     color: rgb(105, 9, 82); 
     text-align: left;
     margin: 0;
     font-size: 20px;
+    padding: 0 20px 0 0;
 }    
+
 
 /*fin servicios*/
 
@@ -353,6 +480,7 @@ div .contenido11 {
     font-family: 'Dancing Script', cursive;
     margin: 40px auto;
     text-align: center;
+
 }
 
 .combo h5{
@@ -375,6 +503,11 @@ div .contenido11 {
 .combo ul li{
     margin-bottom: 10px;
 }
+
+.item {
+    visibility: hidden;
+}
+
 
 .precio{
     padding: 15px;
