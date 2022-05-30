@@ -12,6 +12,7 @@ body{
     
 }
 
+
 /*header*/
 header{
     height: 150px;
@@ -72,39 +73,8 @@ nav a:hover{
 
 /*inicio home*/
 
-.caja1{
-    margin-top: 25px;
-    max-height: 500px;
-}
-
-
-.bienvenidos{
-    position: relative;
-    top: -450px;
-}
-
-
-.caja1 img{
-    opacity: 0.5;
-}
-
-
-
-.caja2{
-    max-height: 500px;
-}
-
-.profesionales{
-    position: relative;
-    top: -450px;
-}
-
-.caja2 img{
-    opacity: 0.5;
-}
-
 p{
-    font-size: 30px;
+    font-size: 40px;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     padding:0 120px;
@@ -112,14 +82,78 @@ p{
 }
 
 h2{
-    margin: 75px auto 10px;
+    margin: 0 auto 10px;
     font-family: 'Montserrat', sans-serif;
     font-size: 45px;
     color: rgb(142, 30, 84);
     text-align: center;
       
 }
+
+.bienvenidos{
+    position: relative;
+    top: -615px;
+}
+
+.caja1{
+    max-height: 750px;
+    animation-name: desenfoque;
+    animation-duration: 3s;
+    animation-fill-mode: forwards
+}
+
+@keyframes desenfoque{
+    to{
+        filter: blur(0);
+    }
+    from{
+        filter:blur(10px)
+    }
+}
+
+.caja1 img{
+    opacity: 0.5;
+    width: 100%;
+}
 /*fin home*/
+
+/*inicio quines somos*/
+
+.caja2{
+    max-height: 720px;
+
+}
+
+.caja2 h2{
+    transition: all 3s ease;
+    transform: scale(0.5);
+}
+
+.caja2:hover h2{
+    transform: scale(1);
+}
+
+.caja2 p{
+    transition: all 3s ease;
+    transform: scale(0.5);
+}
+
+.caja2:hover p{
+    transform: scale(1);
+}
+
+.profesionales{
+    position: relative;
+    top: -570px;
+}
+
+.caja2 img{
+    opacity: 0.5;
+    width: 100%;
+}
+
+/*inicio quines somos*/
+
 
 /*inicio servicios*/
 
@@ -615,6 +649,6 @@ footer{
 }    
 
 .final p{
-    font-size: 15px ;
+    font-size: 25px ;
     color: rgb(105, 9, 82);
 }
