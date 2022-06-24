@@ -16,7 +16,11 @@ body{
 /*header*/
 header{
     height: 150px;
+    width: 100%;
     background-color:rgb(196, 128, 151) ;
+    z-index: 100; /*para poder fijar el encabezado*/
+    box-sizing: border-box;
+    position: fixed;
 }
 
 .contenedor{
@@ -41,14 +45,18 @@ header img {
     font-size: 70px;
     color: rgba(224, 16, 113, 0.6);
 } 
+
 /*header*/
 
 /*nav*/
+
 nav {
+    margin-top: 30px;
     display: flex;
     height: 30px;  
-  
+   
 }
+
 
 nav a{
     text-decoration: none;
@@ -136,6 +144,7 @@ h2{
 .caja2 p{
     transition: all 3s ease;
     transform: scale(0.5);
+    
 }
 
 .caja2:hover p{
@@ -649,6 +658,6 @@ footer{
 }    
 
 .final p{
-    font-size: 25px ;
+    font-size: 15px ;
     color: rgb(105, 9, 82);
 }
