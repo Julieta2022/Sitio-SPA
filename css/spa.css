@@ -100,7 +100,7 @@ h2{
 
 .bienvenidos{
     position: relative;
-    top: -615px;
+    top: -510px;
 }
 
 .caja1{
@@ -153,7 +153,12 @@ h2{
 
 .profesionales{
     position: relative;
-    top: -570px;
+    top: -505px;
+}
+
+.profesionales_p{
+    position: relative;
+    top: -535px;
 }
 
 .caja2 img{
@@ -161,7 +166,7 @@ h2{
     width: 100%;
 }
 
-/*inicio quines somos*/
+/*fin quines somos*/
 
 
 /*inicio servicios*/
